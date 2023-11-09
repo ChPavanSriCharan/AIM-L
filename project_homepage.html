@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter Draft Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Letter Draft Generator</h1>
+        <form id="letterForm">
+            <div class="form-group">
+                <label for="letterType">Type of Letter:</label>
+                <input type="text" id="letterType" required>
+            </div>
+            <div class="form-group">
+                <label for="letterFormat">Choose Handwriting Format or Text:</label>
+                <input type="text" id="letterFormat" required>
+            </div>
+            <div class="form-group">
+                <label for="wordCount">Number of Words:</label>
+                <input type="number" id="wordCount" required>
+            </div>
+            <div class="form-group">
+                <label for="letterDate">Date:</label>
+                <input type="date" id="letterDate" required>
+            </div>
+            <div class="form-group">
+                <label for="letterDescription">Brief Description to Generate the Draft:</label>
+                <input type="text" id="letterDescription" required>
+            </div>
+            <div class="form-group">
+                <label for="letterTone">Tone of the Letter:</label>
+                <input type="text" id="letterTone" required>
+            </div>
+            <button type="button" onclick="generateLetterDraft()">Generate Draft</button>
+        </form>
+        <div class="sample-image">
+            <img src="letter-sample.png" alt="Letter Sample">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

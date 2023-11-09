@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Draft Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="emailForm">
+            <h1>Email Draft Generator</h1>
+            <div class="form-group">
+                <label for="emailType">Type of Email:</label>
+                <input type="text" id="emailType" required>
+            </div>
+            <div class="form-group">
+                <label for="wordCount">Number of Words:</label>
+                <input type="number" id="wordCount" required>
+            </div>
+            <div class="form-group">
+                <label for="emailTone">Tone of Email:</label>
+                <input type="text" id="emailTone" required>
+            </div>
+            <div class="form-group">
+                <label for="emailDate">Date:</label>
+                <input type="date" id="emailDate" required>
+            </div>
+            <div class="form-group">
+                <label for="emailSubject">Subject:</label>
+                <input type="text" id="emailSubject" required>
+            </div>
+            <button type="button" onclick="generateEmailDraft()">Generate Draft</button>
+            
+        </form>
+        <div class="sample-image">
+            <img src="https://www.wordstream.com/wp-content/uploads/2022/05/interview-follow-up-email-example.png" alt="Email Sample">
+        </div>
+    </div>
+    <div id="draft-content"></div>
+    <script src="script.js"></script>
+</body>
+</html>
